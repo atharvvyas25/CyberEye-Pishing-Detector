@@ -1,0 +1,144 @@
+/* Scan Result Specific Styles */
+.scan-result-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.scan-result-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(16, 185, 129, 0.1),
+        transparent,
+        rgba(16, 185, 129, 0.1)
+    );
+    animation: headerGlow 3s linear infinite;
+}
+
+.security-analysis-item {
+    transition: all 0.3s ease;
+}
+
+.security-analysis-item:hover {
+    transform: translateX(10px);
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.threat-indicator {
+    position: relative;
+    overflow: hidden;
+}
+
+.threat-indicator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(16, 185, 129, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.threat-indicator:hover::before {
+    left: 100%;
+}
+
+.recommendation-item {
+    transition: all 0.3s ease;
+}
+
+.recommendation-item:hover {
+    transform: translateX(10px);
+    background: rgba(16, 185, 129, 0.1);
+}
+
+/* Status Badge Animations */
+.status-badge {
+    position: relative;
+    overflow: hidden;
+}
+
+.status-badge::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: badgeShine 3s linear infinite;
+}
+
+/* Animations */
+@keyframes headerGlow {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.5; }
+}
+
+@keyframes badgeShine {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) rotate(45deg); }
+}
+
+/* Status Colors */
+.status-safe {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.status-suspicious {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+}
+
+.status-malicious {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+/* Back Button Animation */
+.back-button {
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+}
+
+.back-button i {
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover i {
+    transform: translateX(-5px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .security-analysis-item,
+    .recommendation-item {
+        padding: 1rem;
+    }
+
+    .threat-indicator {
+        padding: 0.75rem;
+    }
+} 
