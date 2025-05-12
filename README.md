@@ -42,27 +42,6 @@ CyberEye is a modern web application that provides real-time phishing detection 
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - Basic understanding of web development (for customization)
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/cyber-eye.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd cyber-eye
-   ```
-
-3. Open `index.html` in your web browser or use a local server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx serve
-   ```
-
 ## 💻 Usage
 
 1. **URL Scanning**
@@ -103,10 +82,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Developer
 
 - **Atharv Vyas**
@@ -126,7 +101,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any queries or suggestions, please reach out through:
 - GitHub Issues
 - Project Discussions
-- Email: [Your Email]
+- Email: vyats25@gmail.com
 
 ---
 
