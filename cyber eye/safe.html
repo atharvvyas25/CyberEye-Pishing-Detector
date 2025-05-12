@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Result - SAFE | CyberEye</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="ans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Background Effects -->
+    <div class="neon-grid"></div>
+    <div class="cyber-pulse"></div>
+    <div class="digital-circuit"></div>
+    <div class="hack-matrix"></div>
+    <div class="data-flow"></div>
+    <div class="glow-orb"></div>
+    <div class="glitch-overlay"></div>
+
+    <div class="min-h-screen flex items-center justify-center relative z-10">
+        <div class="max-w-md w-full p-8 rounded-2xl shadow-2xl bg-gray-900/80 border-2 border-emerald-500 flex flex-col items-center animate-fade-in">
+            <i class="fas fa-shield-alt text-6xl text-emerald-500 animate-pulse mb-6"></i>
+            <h1 class="text-4xl font-bold mb-4 cyber-text">SAFE</h1>
+            <p class="text-emerald-400 mb-4 text-center">No threats detected. This URL/email appears to be safe.</p>
+            <div class="mt-8 flex flex-col gap-4 w-full items-center">
+                <a href="index.html" class="cyber-button px-6 py-3 rounded-lg font-semibold text-white flex items-center justify-center animate-fade-in-up hover:scale-105 transition-transform duration-300 shadow-lg bg-gradient-to-r from-emerald-500 to-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-400/50">
+                    <i class="fas fa-redo mr-2"></i> Scan Another
+                </a>
+                <button class="px-6 py-3 rounded-lg font-semibold text-white flex items-center justify-center bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg animate-fade-in-up delay-200 focus:outline-none focus:ring-4 focus:ring-blue-400/50">
+                    <i class="fas fa-flag mr-2"></i> Report this URL is safe
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.4,0,0.2,1) both; }
+    .animate-fade-in-up.delay-200 { animation-delay: 0.2s; }
+    </style>
+</body>
+</html> 
